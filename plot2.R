@@ -1,6 +1,6 @@
 #Exploratory Data Analysis _ Peer Review Assignment 1 - plot2.R 
 
-
+# read data 
 df <- read.csv(file ='household_power_consumption.txt',header = TRUE, sep = ";", stringsAsFactors = FALSE) 
 df$Date <- strptime(df[,1],"%d/%m/%Y")
 df_subset <- df[df$Date =='2007-02-01' | df$Date=='2007-02-02',]
